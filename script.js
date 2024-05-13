@@ -94,7 +94,7 @@ const displayMap = (start, stop) => {
           'circle-color': '#3887be'
         }
       });
-      // this is where the code from the next step will go
+
       var coords = stop
       var end = {
           type: 'FeatureCollection',
@@ -143,7 +143,7 @@ const initGeocoder = (element, placeholder) => {
   const geocoder = new MapboxGeocoder({
     accessToken: mapboxgl.accessToken,
     placeholder: placeholder,
-    proximity: { // focus on NYC
+    proximity: { // focus on New York City
       longitude: centralCoordinates[0],
       latitude: centralCoordinates[1]
     },
